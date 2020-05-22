@@ -9,6 +9,10 @@ body {
   background-size: cover;
   margin: 0;
 }
+button:focus,
+a:focus {
+  outline: 2px dotted hsl(257, 51%, 18%);
+}
 .header {
   margin: 50px 0px 75px 100px;
 }
@@ -56,7 +60,7 @@ body {
   border-radius: 50%;
   border: 1px solid #ffffff;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,4 +72,45 @@ body {
 }
 .attribution a {
   color: #ffffff;
+}
+
+/* Media queries */
+@media all and (max-width: 1030px) {
+  body {
+    background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  .header {
+    margin: 50px 0px 50px 50px;
+  }
+  .header-logo {
+    width: 40%;
+  }
+  .container {
+    flex-direction: column;
+    margin: 0 50px;
+    text-align: center;
+  }
+  .footer {
+    justify-content: center;
+    margin-top: 75px;
+    margin-right: 0px;
+  }
+}
+@media all and (max-width: 520px) {
+  .header {
+    margin: 35px 0px 50px 35px;
+  }
+  .container {
+    margin: 0 35px;
+  }
+  .intro__title {
+    font-size: 26px;
+  }
+  .intro__register {
+    font-size: 14px;
+    width: 65%;
+  }
 }
