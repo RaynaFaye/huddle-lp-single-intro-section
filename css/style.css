@@ -51,10 +51,15 @@ a:focus {
   cursor: pointer;
 }
 .footer {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 25px;
   margin-right: 100px;
+}
+.footer__social-links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .footer__social-link {
   border-radius: 50%;
@@ -94,9 +99,11 @@ a:focus {
     text-align: center;
   }
   .footer {
-    justify-content: center;
     margin-top: 75px;
     margin-right: 0px;
+  }
+  .footer__social-links {
+    justify-content: center;
   }
 }
 @media all and (max-width: 520px) {
