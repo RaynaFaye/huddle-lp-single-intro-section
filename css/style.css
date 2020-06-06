@@ -98,6 +98,9 @@ a:focus {
     margin: 0 50px;
     text-align: center;
   }
+  .intro {
+    margin-left: 0px;
+  }
   .footer {
     margin-top: 75px;
     margin-right: 0px;
